@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  width: 95%;
+  margin: auto;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+}
+
+.navbar {
+  padding: 8px 0px;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__contacts {
+  text-align: end;
+}
+
+.navbar__address {
+  display: block;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+
+.navbar__button {
+  padding: 18px 30px;
+  margin-left: 30px;
+}
+
+.navbar__phone {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 12px;
+    padding: 15px 26px;
+  }
+  .navbar__logo {
+    max-width: 90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
