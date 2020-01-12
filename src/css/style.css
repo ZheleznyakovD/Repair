@@ -111,7 +111,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  flex-basis-padding-right: 135px;
+  padding-right: 135px;
 }
 
 .hero-title {
