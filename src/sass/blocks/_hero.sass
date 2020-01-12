@@ -1,0 +1,53 @@
+.hero
+    padding: 50px 0
+    background: $fon-color
+    border: 2px solid red
+    &-block
+        display: flex
+        
+    &-img
+        max-width: 100%
+    &-text
+       flex-basis: 50%
+        padding-right: 135px
+    &-title
+        font-size: 41px
+        font-weight: 700
+        line-height: 55px
+    &-subtitle
+        color: $text-color
+        font-size: 20px
+        font-weight: 700
+        line-height: 65px
+        margin-bottom: 70px
+    &-item
+        display: flex
+        align-items: center
+        margin-bottom: 31px
+    &-list__img
+        margin-right: 30px
+        width: 40px
+        height: 40px
+    &-list
+        padding: 0
+        width: 70%
+        &__text
+            max-width: 300px
+
+//Responsive
+@media (max-width: 1200px)
+    .hero
+        padding: 0
+        border: 2px solid red
+        &-block
+            flex-direction: column
+            max-width: 100%
+            flex-flow: column wrap
+            // justify-content: center
+        &-title
+            font-size: 35px
+        &-subtitle
+            font-size: 16px
+        &-list
+            margin-right: 0
+            margin-bottom: 40px
