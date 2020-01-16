@@ -1,0 +1,88 @@
+.offer
+    background: url('../img/offer-bg.jpg') no-repeat
+    background-position: center right
+    background-size: contain
+    padding: 90px 0
+    position: relative
+    &::before
+        content: ''
+        width: 50%
+        height: 100%
+        position: absolute
+        background-color: #fff
+        top: 0
+        left: 0
+    &-block
+        position: relative
+        width: 50%
+        padding-right: 90px
+    &__title
+        font-size: 24px
+        line-height: 35px
+        width: 365px
+        +bold
+        margin-bottom: 20px
+    &__subtitle
+        display: inline-block
+        font-size: 16px
+        width: 240px
+        +reg
+        margin-bottom: 30px
+    &__input
+        padding: 20px 26px
+        border-radius: 10px
+        border: 1px solid $border-input
+        margin-bottom: 30px
+        font-size: 15px
+        line-height: 24px
+        width: 240px
+        +reg
+        outline: none
+        &:first-child
+            margin-right: 10px
+    &__button
+        padding: 27px
+        width: 100%
+        font-size: 16px
+        line-height: 18px
+        +reg
+        margin-bottom: 30px
+    &__col
+        display: block
+        width: 240px
+        +reg
+        &:first-child
+            margin-right: 70px
+    &__text
+        display: flex
+    &__tel
+        display: block
+        width: 100%
+        text-decoration: none
+        color: $text-color
+        +bold
+        margin-top: 10px
+@media ( max-width: 1200px )
+    .offer
+        background: #fff
+        &-block
+            width: 100%
+            padding: 0
+        &__input
+            width: 100%
+@media ( max-width: 768px )
+    .offer
+        &__col
+            justify-content: center
+            &:first-child
+                margin-right: 0
+@media ( max-width: 567px )
+    .offer
+        &__text
+            flex-direction: column
+        &__title
+            font-size: 18px  
+            width: 100% 
+            line-height: 1.2
+        &__col
+            margin-bottom: 15px

@@ -14,6 +14,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
 }
@@ -44,6 +49,10 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
+}
+
+.btn:hover {
+  background-color: #ffdb33;
 }
 
 .navbar {
@@ -87,6 +96,8 @@ img {
 .navbar__button {
   padding: 18px 30px;
   margin-left: 30px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 .navbar__phone {
@@ -128,7 +139,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 135px;
+  padding-right: 100px;
 }
 
 .hero-title {
@@ -155,6 +166,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 31px;
+}
+
+.hero-item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__img {
@@ -210,6 +225,143 @@ img {
     font-size: 12px;
     font-weight: 400;
     font-family: 'Museo Sans Light';
+  }
+}
+
+.offer {
+  background: url("../img/offer-bg.jpg") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  padding: 90px 0;
+  position: relative;
+}
+
+.offer::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
+.offer-block {
+  position: relative;
+  width: 50%;
+  padding-right: 90px;
+}
+
+.offer__title {
+  font-size: 24px;
+  line-height: 35px;
+  width: 365px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.offer__subtitle {
+  display: inline-block;
+  font-size: 16px;
+  width: 240px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  padding: 20px 26px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 24px;
+  width: 240px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  outline: none;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  padding: 27px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.offer__col {
+  display: block;
+  width: 240px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+.offer__col:first-child {
+  margin-right: 70px;
+}
+
+.offer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer__tel {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding: 0;
+  }
+  .offer__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer__col {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offer__col:first-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .offer__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__title {
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.2;
+  }
+  .offer__col {
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
