@@ -1,0 +1,28 @@
+*
+    box-sizing: border-box
+body 
+    font-family: 'Museo Sans Light', sans-serif
+    color: $text-color
+img
+    max-width: 100%
+.container
+    max-width: 1170px
+    width: 95%
+    margin: auto
+.section-title
+    +bold
+    font-size: 30px
+    line-height: 45px
+    color: $text-color
+    margin: auto
+.btn
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+@media ( max-width: 1200px )
+    .container
+        max-width: 860px
+
+@media ( max-width: 768px )
+    .container
+        max-width: 100%       

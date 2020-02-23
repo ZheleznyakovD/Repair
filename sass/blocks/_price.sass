@@ -1,0 +1,63 @@
+.price
+  padding: 100px 0
+  &__title
+    max-width: 515px
+    text-align: center
+    margin-bottom: 60px
+  &__subtitle
+    +reg
+    font-size: 20px
+    line-height: 45px
+    text-align: center
+    display: block
+    margin-bottom: 60px
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__description
+    display: block
+    margin-top: 35px
+    margin-bottom: 25px
+    font-size: 18px
+    +reg
+  &-card
+    text-align: center
+    margin-bottom: 30px
+    border: 1px solid #e8e8e8
+    padding-bottom: 45px
+    transition: 0.5s
+    &:hover
+      box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+  &__link
+    text-decoration: none
+    font-size: 16px
+    line-height: 18px
+    +bold
+    color: $text-color
+    position: relative
+    display: inline-block
+    &:hover
+      &:after
+        height: 12px  
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      bottom: -4px
+      left: 0
+      width: 100%
+      height: 3px
+      background-color: $main-color
+      z-index: -1
+      transition: 0.5s
+  @media (max-width: 800px)
+    .price
+      &-card
+        margin: auto
+        margin-bottom: 30px
+        padding-bottom: 35px
+      &__description
+        font-size: 14px
+        margin-top: 28px
+        margin-bottom: 19px
